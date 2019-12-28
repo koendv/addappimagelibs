@@ -3,13 +3,13 @@ Automatically adds libraries to a Raspberry AppImage project.
 
 ## Description
 
-```addappimagelibs``` determines which shared libraries an AppImage needs, and copies the libraries to the AppImage. ```addappimagelibs-qt``` adds Qt plugins and their dependencies as well.
+```addappimagelibs``` determines which shared libraries an AppImage needs, and copies the libraries to the AppImage. Only libraries that are not installed on a *2019-09-26-raspbian-buster-full* are copied.
 
-Only libraries that are not installed on a clean *2019-09-26-raspbian-buster-full* are copied.
+```addappimagelibs-qt``` adds Qt plugins and their dependencies as well.
 
 ## Example
 
-This is a simple example: a single program, using boost and wxwindows.
+A program using boost and wxwindows.
 
 ```
 koen@raspberrypi:~/src/addappimagelibs $ find ./PrusaSlicer.AppDir/
